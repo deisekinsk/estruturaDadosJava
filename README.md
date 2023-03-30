@@ -1,18 +1,15 @@
-## Getting Started
+## Estrutura de Dados
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Como se estrutura os dados no computador?
+Os dados seja um número inteiro, ou valor booleano, são armazenados em bit. Bit é um valor de memória.
 
-## Folder Structure
+Referências:
+. Lógica de Programação e Estrutura de Dados. Sandra Paga e Gerson Risseti. Pearson.
+. Estrutrua de DAdps Fundamentais - Conceitos e Aplicações. Silvio Pereira
+. Java SE 8 Programmer I - O guia para sua certificação Oracle Certified Associate. Casa do Código
 
-The workspace contains two folders by default, where:
+## Formatação de arquivo .md
 
 - `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
+[here](https://github.com/deisekinsk/condicionalJava).
 > If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
