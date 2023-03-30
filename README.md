@@ -75,9 +75,9 @@ LIFO - Last in, First Out
 `isEmpty();` Verifica se a referência da pilha é vazia
 
 ## Referências
-. Lógica de Programação e Estrutura de Dados. Sandra Paga e Gerson Risseti. Pearson.
-. Estrutrua de DAdps Fundamentais - Conceitos e Aplicações. Silvio Pereira
-. Java SE 8 Programmer I - O guia para sua certificação Oracle Certified Associate. Casa do Código
+- Lógica de Programação e Estrutura de Dados. Sandra Paga e Gerson Risseti. Pearson.
+- Estrutrua de DAdps Fundamentais - Conceitos e Aplicações. Silvio Pereira
+- Java SE 8 Programmer I - O guia para sua certificação Oracle Certified Associate. Casa do Código
 
 
 ##### Notas
