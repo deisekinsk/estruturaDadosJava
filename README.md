@@ -69,10 +69,13 @@ T=Type > Collectiions#addAll;
 ## Pilha
 LIFO - Last in, First Out
 - Métodos de manipulação de Pilhas
--- `top();` Copia informação do primeio nó da pilha 
--- `pop();` Retira informação do primeiro nó da pilha
--- `push();` Insire informação do primeiro nó da pilha
--- `isEmpty();` Verifica se a referência da pilha é vazia
+
+| Método | Ação |
+| --- | --- |
+| `top();` | Copia informação do primeio nó da pilha  |
+| `pop();` | Retira informação do primeiro nó da pilha |
+| `push();` | Insire informação do primeiro nó da pilha |
+| `isEmpty();` | Verifica se a referência da pilha é vazia |
 
 ## Referências
 - Lógica de Programação e Estrutura de Dados. Sandra Paga e Gerson Risseti. Pearson.
