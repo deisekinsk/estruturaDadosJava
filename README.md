@@ -42,6 +42,7 @@ O uso de Generics é recomendado para evitar casting excessivo e códigos redund
 >}
 >Lista<Aluno> minhaLista = new Lista<Aluno>();
 >imprimiLista(minhaLista);
+
 -UpperBounded Wildcard > List ? extends Objeto
 >public void imprimiLista(List<? extends Pessoa> listaPessoas){
     >for(Pessoa p : listaPessoas){
@@ -50,6 +51,7 @@ O uso de Generics é recomendado para evitar casting excessivo e códigos redund
 >}
 >Lista<Aluno> minhaLista = new Lista<Aluno>();
 >imprimiLista(minhaLista);
+
 -LowerBounded Wildcard > List ? super Objeto
 >public void imprimiLista(List<? super Pessoa> listaPessoas){
     >for(Pessoa p : listaPessoas){
