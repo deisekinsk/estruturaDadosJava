@@ -2,7 +2,7 @@ package com.atribuicaoReferencia.atribuicaoReferencia;
 
 public class atribuicaoReferencia {
 
-    Integer objetoInteiro;
+    Integer objetoInteiro;    
 
 
     public atribuicaoReferencia(Integer objetoInteiro) {

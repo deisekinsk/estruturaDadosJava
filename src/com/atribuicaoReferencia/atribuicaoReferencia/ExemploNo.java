@@ -1,29 +1,29 @@
 package com.atribuicaoReferencia.atribuicaoReferencia;
 
-public class ExemploNo {
-    private String conteudo;
-    private ExemploNo proximoNo;
+public class ExemploNo<T> {
+    private T conteudo;
+    private ExemploNo<T> proximoNo;
 
 
-    public ExemploNo(String conteudo) {
+    public ExemploNo(T conteudo) {
         this.proximoNo = null;
         this.conteudo = conteudo;
     }
 
 
-    public String getConteudo() {
+    public T getConteudo() {
         return this.conteudo;
     }
 
-    public void setConteudo(String conteudo) {
+    public void setConteudo(T conteudo) {
         this.conteudo = conteudo;
     }
 
-    public ExemploNo getProximoNo() {
+    public ExemploNo<T> getProximoNo() {
         return this.proximoNo;
     }
 
-    public void setProximoNo(ExemploNo proximoNo) {
+    public void setProximoNo(ExemploNo<T> proximoNo) {
         this.proximoNo = proximoNo;
     }
 
