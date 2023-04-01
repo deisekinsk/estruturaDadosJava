@@ -77,6 +77,15 @@ LIFO - Last in, First Out
 | `push();` | Insire informação do primeiro nó da pilha |
 | `isEmpty();` | Verifica se a referência da pilha é vazia |
 
+## Filas
+FIFO - First in First Out
+| Método | Ação |
+| --- | --- |
+| `first();` | Verifica entrada do primeiro conteúdo|
+| `enqueue();` | Enfileirar colocando o nó no último item da fila|
+| `dequeue());` | desinfileirar tirando o último nó da fila |
+| `isEmpty();` | Verifica se a referência da fila é vazia |
+
 ## Referências
 - Lógica de Programação e Estrutura de Dados. Sandra Paga e Gerson Risseti. Pearson.
 - Estrutrua de DAdps Fundamentais - Conceitos e Aplicações. Silvio Pereira

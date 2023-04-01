@@ -53,6 +53,8 @@ public class App {
         manipulaPilha.push(new Pilha(99));
         
         System.out.println(manipulaPilha);
+
+        
         
 
 
