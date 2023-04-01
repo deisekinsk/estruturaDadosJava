@@ -9,7 +9,7 @@ public class ManipulaFila {
 
     }
 
-    public Fila first(){
+    public Object first(){
         if(!this.isEmpty()){
             Fila primeiroConteudo = conteudoEntrada;
             while(true){
@@ -19,20 +19,19 @@ public class ManipulaFila {
                     break;
                 }
             }
-            return primeiroConteudo;
+            return primeiroConteudo.getConteudo();
 
         }
         return null;
     }
 
-
-
-    public void enqueue(Fila novoConteudo){
+    public void enqueue(Object recebeConteudo){
+        Fila novoConteudo = new Fila(recebeConteudo);
         novoConteudo.setProximoConteudo(conteudoEntrada);
         conteudoEntrada = novoConteudo;
     }
 
-    public Fila dequeue(){
+    public Object dequeue(){
         if(!this.isEmpty()){
             Fila primeiroConteudo = conteudoEntrada;
             Fila armazenaConteudo = conteudoEntrada; //noAuxiliar
@@ -47,7 +46,7 @@ public class ManipulaFila {
                 }
             }
 
-            return primeiroConteudo;
+            return primeiroConteudo.getConteudo();
 
         }
         return null;

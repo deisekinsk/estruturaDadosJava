@@ -59,15 +59,15 @@ public class App {
         
         System.out.println(manipulaPilha);
 
-        manipulaFila.enqueue(new Fila("Chimamanda"));
-        manipulaFila.enqueue(new Fila("Dandara"));
-        manipulaFila.enqueue(new Fila("Xica Da Silva"));
-        manipulaFila.enqueue(new Fila("Elza Soares"));
+        manipulaFila.enqueue("Chimamanda");
+        manipulaFila.enqueue("Dandara");
+        manipulaFila.enqueue("Xica Da Silva");
+        manipulaFila.enqueue("Elza Soares");
 
         System.out.println("Conteúdo da fila="+manipulaFila);
         System.out.println("manipulaFila.dequeue(): " + manipulaFila.dequeue());
         System.out.println("Conteúdo da fila="+manipulaFila);
-        manipulaFila.enqueue(new Fila("Nina Simone"));
+        manipulaFila.enqueue("Nina Simone");
         System.out.println("Conteúdo da fila="+manipulaFila);
 
         System.out.println("manipulaFila.first();: " + manipulaFila.first());
