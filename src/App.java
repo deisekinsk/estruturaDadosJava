@@ -1,4 +1,6 @@
 import com.atribuicaoReferencia.atribuicaoReferencia.ExemploNo;
+import com.atribuicaoReferencia.atribuicaoReferencia.Fila;
+import com.atribuicaoReferencia.atribuicaoReferencia.ManipulaFila;
 import com.atribuicaoReferencia.atribuicaoReferencia.ManipulaPilha;
 import com.atribuicaoReferencia.atribuicaoReferencia.Pilha;
 import com.atribuicaoReferencia.atribuicaoReferencia.atribuicaoReferencia;
@@ -6,7 +8,7 @@ import com.atribuicaoReferencia.atribuicaoReferencia.atribuicaoReferencia;
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("***Esturura de Dados***\n");
-        //cria objeto
+        //cria objet, instancia
         
         atribuicaoReferencia atribuicaoReferencia = new atribuicaoReferencia(0);
 
@@ -19,6 +21,9 @@ public class App {
         //ExemploNo<Integer> exemploNo4 = new ExemploNo<Integer>(5);
 
         ManipulaPilha manipulaPilha = new ManipulaPilha();
+
+        ManipulaFila manipulaFila = new ManipulaFila(); //minhaFila
+        
 
 
 
@@ -53,6 +58,28 @@ public class App {
         manipulaPilha.push(new Pilha(99));
         
         System.out.println(manipulaPilha);
+
+        manipulaFila.enqueue(new Fila("Chimamanda"));
+        manipulaFila.enqueue(new Fila("Dandara"));
+        manipulaFila.enqueue(new Fila("Xica Da Silva"));
+        manipulaFila.enqueue(new Fila("Elza Soares"));
+
+        System.out.println("Conteúdo da fila="+manipulaFila);
+        System.out.println("manipulaFila.dequeue(): " + manipulaFila.dequeue());
+        System.out.println("Conteúdo da fila="+manipulaFila);
+        manipulaFila.enqueue(new Fila("Nina Simone"));
+        System.out.println("Conteúdo da fila="+manipulaFila);
+
+        System.out.println("manipulaFila.first();: " + manipulaFila.first());
+        System.out.println("Conteúdo da fila="+manipulaFila);
+        
+        
+
+
+
+
+
+
 
         
         

@@ -19,6 +19,7 @@ public class ManipulaFila {
                     break;
                 }
             }
+            return primeiroConteudo;
 
         }
         return null;
@@ -57,5 +58,34 @@ public class ManipulaFila {
         boolean verificaVazio = conteudoEntrada == null ? true : false;
         return verificaVazio;
     }
+
+
+
+    @Override
+    public String toString() {
+        String imprimiFila = "";
+        
+        Fila armazenaConteudo = conteudoEntrada;
+
+            if(conteudoEntrada != null){
+                while(true){
+                   imprimiFila += armazenaConteudo;
+                   //teste se tem apenas um elemento na fila
+                   if(armazenaConteudo.getProximoConteudo() != null){
+                    armazenaConteudo = armazenaConteudo.getProximoConteudo();
+                   }else{
+                    imprimiFila += "null";
+                    break;
+                   }
+                }
+
+            }else{
+                imprimiFila = "null";
+            }
+
+        return imprimiFila;
+    }
+
+    
     
 }
