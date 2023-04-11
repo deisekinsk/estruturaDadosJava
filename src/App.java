@@ -59,6 +59,8 @@ public class App {
         
         System.out.println(manipulaPilha);
 
+        System.out.println("-----------------\nManipula Fila\n-----------------");
+
         manipulaFila.enqueue("Chimamanda");
         manipulaFila.enqueue("Dandara");
         manipulaFila.enqueue("Xica Da Silva");
@@ -71,20 +73,7 @@ public class App {
         System.out.println("Conteúdo da fila="+manipulaFila);
 
         System.out.println("manipulaFila.first();: " + manipulaFila.first());
-        System.out.println("Conteúdo da fila="+manipulaFila);
-        
-        
-
-
-
-
-
-
-
-        
-        
-
-
+        System.out.println("Conteúdo da fila="+manipulaFila); 
 
 
     }
