@@ -1,17 +1,17 @@
 package com.atribuicaoReferencia.atribuicaoReferencia;
 
-public class ManipulaFila {
+public class ManipulaFila<T> {
 
-    private Fila conteudoEntrada; //refNoEntradaFila
+    private Fila<T> conteudoEntrada; //refNoEntradaFila
 
     public ManipulaFila(){
         this.conteudoEntrada = null;
 
     }
 
-    public Object first(){
+    public T first(){
         if(!this.isEmpty()){
-            Fila primeiroConteudo = conteudoEntrada;
+            Fila<T> primeiroConteudo = conteudoEntrada;
             while(true){
                 if(primeiroConteudo.getProximoConteudo() != null){
                     primeiroConteudo = primeiroConteudo.getProximoConteudo();
@@ -25,16 +25,16 @@ public class ManipulaFila {
         return null;
     }
 
-    public void enqueue(Object recebeConteudo){
-        Fila novoConteudo = new Fila(recebeConteudo);
+    public void enqueue(T recebeConteudo){
+        Fila<T> novoConteudo = new Fila(recebeConteudo);
         novoConteudo.setProximoConteudo(conteudoEntrada);
         conteudoEntrada = novoConteudo;
     }
 
-    public Object dequeue(){
+    public T dequeue(){
         if(!this.isEmpty()){
-            Fila primeiroConteudo = conteudoEntrada;
-            Fila armazenaConteudo = conteudoEntrada; //noAuxiliar
+            Fila<T> primeiroConteudo = conteudoEntrada;
+            Fila<T> armazenaConteudo = conteudoEntrada; //noAuxiliar
 
             while(true){
                 if(primeiroConteudo.getProximoConteudo() != null){
@@ -45,7 +45,7 @@ public class ManipulaFila {
                     break;
                 }
             }
-
+            //casting (T)
             return primeiroConteudo.getConteudo();
 
         }
@@ -64,7 +64,7 @@ public class ManipulaFila {
     public String toString() {
         String imprimiFila = "";
         
-        Fila armazenaConteudo = conteudoEntrada;
+        Fila<T> armazenaConteudo = conteudoEntrada;
 
             if(conteudoEntrada != null){
                 while(true){

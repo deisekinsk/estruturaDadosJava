@@ -22,7 +22,7 @@ public class App {
 
         ManipulaPilha manipulaPilha = new ManipulaPilha();
 
-        ManipulaFila manipulaFila = new ManipulaFila(); //minhaFila
+        ManipulaFila<String> manipulaFila = new ManipulaFila<>(); //minhaFila
         
 
 

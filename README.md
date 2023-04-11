@@ -86,6 +86,9 @@ FIFO - First in First Out
 | `dequeue());` | desinfileirar tirando o último nó da fila |
 | `isEmpty();` | Verifica se a referência da fila é vazia |
 
+### Generics
+'Generics add stability to your code by making more of your bugs detectable at compile time. Here is a small excerpt from the definitions of the interfaces List and Iterator in package java.util'
+
 ## Referências
 - Lógica de Programação e Estrutura de Dados. Sandra Paga e Gerson Risseti. Pearson.
 - Estrutrua de DAdps Fundamentais - Conceitos e Aplicações. Silvio Pereira

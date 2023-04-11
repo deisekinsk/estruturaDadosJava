@@ -1,34 +1,34 @@
 package com.atribuicaoReferencia.atribuicaoReferencia;
 
-public class Fila {
+public class Fila<T> {
 
-    private Object conteudo; //object
-    private Fila proximoConteudo; //refNo
+    private T conteudo; //object
+    private Fila<T> proximoConteudo; //refNo
 
 
     public Fila() {
     }
 
 
-    public Fila(Object conteudo){
+    public Fila(T conteudo){
         this.proximoConteudo = null;
         this.conteudo = conteudo;
     }
 
 
-    public Object getConteudo() {
+    public T getConteudo() {
         return this.conteudo;
     }
 
-    public void setConteudo(Object conteudo) {
+    public void setConteudo(T conteudo) {
         this.conteudo = conteudo;
     }
 
-    public Fila getProximoConteudo() {
+    public Fila<T> getProximoConteudo() {
         return this.proximoConteudo;
     }
 
-    public void setProximoConteudo(Fila proximoConteudo) {
+    public void setProximoConteudo(Fila<T> proximoConteudo) {
         this.proximoConteudo = proximoConteudo;
     }
 
