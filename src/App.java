@@ -4,6 +4,7 @@ import com.atribuicaoReferencia.atribuicaoReferencia.ManipulaFila;
 import com.atribuicaoReferencia.atribuicaoReferencia.ManipulaPilha;
 import com.atribuicaoReferencia.atribuicaoReferencia.Pilha;
 import com.atribuicaoReferencia.atribuicaoReferencia.atribuicaoReferencia;
+import com.estudoListas.atribuicao.ListaEncadeada;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -23,9 +24,8 @@ public class App {
         ManipulaPilha manipulaPilha = new ManipulaPilha();
 
         ManipulaFila<String> manipulaFila = new ManipulaFila<>(); //minhaFila
-        
 
-
+        ListaEncadeada<String> listaEncadeada = new ListaEncadeada<>();
 
 
 
@@ -74,6 +74,8 @@ public class App {
 
         System.out.println("manipulaFila.first();: " + manipulaFila.first());
         System.out.println("Conteúdo da fila="+manipulaFila); 
+
+        listaEncadeada.Print();
 
 
     }

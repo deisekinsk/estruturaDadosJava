@@ -89,6 +89,17 @@ FIFO - First in First Out
 ### Generics
 'Generics add stability to your code by making more of your bugs detectable at compile time. Here is a small excerpt from the definitions of the interfaces List and Iterator in package java.util'
 
+## Listas encadeadas
+Se assemelha a estrutura de Fila. Porém as regras de inserção são diferentes.
+| Método | Ação |
+| --- | --- |
+| `add();` | Adiciona um nó na lista em diversos lugares. Usa a referência do índice|
+| `remove();` | Remove um nó na lista|
+| `get();` | Pega a informação do nó pelo índice |
+| `size();` | Retorna o comprimento/tamanho da lista |
+| `isEmpty();` | Verifica se a referência da lista é vazia |
+
+
 ## Referências
 - Lógica de Programação e Estrutura de Dados. Sandra Paga e Gerson Risseti. Pearson.
 - Estrutrua de DAdps Fundamentais - Conceitos e Aplicações. Silvio Pereira
