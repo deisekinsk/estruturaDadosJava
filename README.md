@@ -66,10 +66,10 @@ K=KEY e V=Value > Map<K,V>;
 E=Element > List<E>;
 T=Type > Collectiions#addAll;
 ?= Genérico;
+
 ## Pilha
 LIFO - Last in, First Out
 - Métodos de manipulação de Pilhas
-
 | Método | Ação |
 | --- | --- |
 | `top();` | Copia informação do primeio nó da pilha  |
@@ -96,6 +96,8 @@ Se assemelha a estrutura de Fila. Porém as regras de inserção são diferentes
 | `add();` | Adiciona um nó na lista em diversos lugares. Usa a referência do índice|
 | `remove();` | Remove um nó na lista|
 | `get();` | Pega a informação do nó pelo índice |
+| `getConteudo();` | Pega a informação do nó pelo índice |
+| `validaIndice();` | Valida indice|
 | `size();` | Retorna o comprimento/tamanho da lista |
 | `isEmpty();` | Verifica se a referência da lista é vazia |
 
