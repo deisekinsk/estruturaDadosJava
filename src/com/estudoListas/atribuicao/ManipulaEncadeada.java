@@ -99,7 +99,7 @@ public class ManipulaEncadeada<T> {
             strRetorno += "{" +
             " Lista Encadeada AQUI='" + conteudoAuxiliar.getConteudo() + "'" +
             "}";
-    }
+          
             conteudoAuxiliar = conteudoAuxiliar.getProximoNo();
 
         }
@@ -107,6 +107,8 @@ public class ManipulaEncadeada<T> {
         strRetorno += "null";
 
         return strRetorno;
+
+    }
 
         
 }

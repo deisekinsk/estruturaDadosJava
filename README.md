@@ -69,7 +69,7 @@ T=Type > Collectiions#addAll;
 
 ## Pilha
 LIFO - Last in, First Out
-- Métodos de manipulação de Pilhas
+Métodos de manipulação de Pilhas
 | Método | Ação |
 | --- | --- |
 | `top();` | Copia informação do primeio nó da pilha  |
