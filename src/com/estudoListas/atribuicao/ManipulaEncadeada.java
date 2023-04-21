@@ -2,6 +2,11 @@ package com.estudoListas.atribuicao;
 
 public class ManipulaEncadeada<T> {
 
+    public void Print(){
+        System.out.println("-----------------\nLista Encadeada\n-----------------");
+
+    }
+
     ListaEncadeada<T> referenciaEntrada;
 
     public ManipulaEncadeada(){ //ListaEncadeada
@@ -18,9 +23,11 @@ public class ManipulaEncadeada<T> {
 
         ListaEncadeada<T> conteudoAuxiliar = referenciaEntrada;
         //percorre cada índice
-        for(int i = 0; i < this.size(); i++){
+        for(int i = 0; i < this.size()-1; i++){
             conteudoAuxiliar = conteudoAuxiliar.getProximoNo();
         }
+
+        conteudoAuxiliar.setProximoNo(novoConteudo);
 
     }
 
@@ -47,7 +54,7 @@ public class ManipulaEncadeada<T> {
         validaIndice(index);
         ListaEncadeada<T> conteudoAuxiliar = referenciaEntrada;
         ListaEncadeada<T> conteudoRetorno = null;
-        for (int i = 0; i < this.size()-1; i++){
+        for (int i = 0; i <= index; i++){
             conteudoRetorno = conteudoAuxiliar;
             conteudoAuxiliar = conteudoAuxiliar.getProximoNo();
         }
@@ -95,9 +102,10 @@ public class ManipulaEncadeada<T> {
         String strRetorno = "";
 
         ListaEncadeada<T> conteudoAuxiliar = referenciaEntrada;
+    
+            System.out.print(" Lista Encadeada = ");
         for(int i = 0; i < this.size(); i++){
-            strRetorno += "{" +
-            " Lista Encadeada AQUI='" + conteudoAuxiliar.getConteudo() + "'" +
+            strRetorno += "{" + conteudoAuxiliar.getConteudo() +
             "}";
           
             conteudoAuxiliar = conteudoAuxiliar.getProximoNo();

@@ -2,10 +2,6 @@ package com.estudoListas.atribuicao;
 
 public class ListaEncadeada<T> {
 
-    public void Print(){
-        System.out.println("-----------------\nLista Encadeada\n-----------------");
-
-    }
 
     private T conteudo;
     private ListaEncadeada proximoNo;
