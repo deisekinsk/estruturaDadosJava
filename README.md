@@ -9,8 +9,8 @@ Memória secundária: Memória que mantém os dados, mesmo na ausência de energ
 
 ## Atribuição e Referência
 
-Nostipos primitivos, as atribuições são por cópia do valor > com o tipo primitivo, o valor é copiado em memória.
-Em objetos, é copiado o valor de referência de memória (sem duplicar o objeto). Ou se ja, objeto aponta para o mesmo endereço de memória.
+Nos tipos primitivos, as atribuições são por cópia do valor > com o tipo primitivo, o valor é copiado em memória.
+Em objetos, é copiado o valor de referência de memória (sem duplicar o objeto). Ou seja, objeto aponta para o mesmo endereço de memória.
 
 ### Tipos de Dados em Java X Memória consumida
 
